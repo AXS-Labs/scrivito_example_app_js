@@ -109,6 +109,10 @@ class Navigation extends React.Component {
       topSectionClassNames.push(heightClassName);
     }
 
+    if (isLandingPage) {
+      topSectionClassNames.push('is-landing-page');
+    }
+
     return (
       <React.Fragment>
         <Scrivito.BackgroundImageTag

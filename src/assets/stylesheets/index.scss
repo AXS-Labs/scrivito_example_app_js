@@ -607,7 +607,7 @@ footer {
 
 .full-height {
   display: flex;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .medium-height .container,
 .full-height .container {
@@ -635,7 +635,7 @@ section.navbar-fixed { padding-top: 80px; }
 }
 .navbar-brand {
   /* background: $logo-dark no-repeat center center / contain; */
-  width: 120px;
+  width: 350px;
   @extend .text-hide;
   height: 75px;
   padding: 25px 0;
@@ -857,6 +857,36 @@ section.navbar-fixed { padding-top: 80px; }
 
 /* search toggle + input */
 
+h1.h1 {
+  font-weight: bold;
+}
+
+.h2 {
+  margin-top: 35px;
+}
+
+.is-landing-page img {
+  max-width: 700px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.is-landing-page h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 34px;
+  margin-top: -10px;
+}
+
+footer {
+  .bg-greydark {
+    p, p a, p a:hover {
+      color: #ffffff;
+    }
+  }
+}
+
 .navbar-search-toggle {
   position: absolute;
   top: 0;
@@ -982,7 +1012,7 @@ section.navbar-fixed { padding-top: 80px; }
     display: block;
     padding: 20px 0;
     margin: 0 auto;
-    width: 145px;
+    width: 245px;
   }
 
   .nav {
@@ -1215,25 +1245,24 @@ section.navbar-fixed { padding-top: 80px; }
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
   height: 75px;
-  text-align: center;
+  text-align: left;
 }
 .nav-landing-page .navbar-brand {
   float: none;
-  margin: 0 auto;
   padding: 0;
+  text-align: left;
 }
 .nav-landing-page .navbar-brand img {
-  width: 120px;
-  margin: 0 auto;
+  width: 300px;
+  margin: 20px 40px;
   padding: 25px 0;
 }
 
 @media (max-width: $screen-md-min) {
   .nav-landing-page .navbar-brand img {
-    width: 145px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
     padding: 20px 0;
   }
 }
